@@ -4,7 +4,7 @@
         </div>
 
         <div class="row container">
-            <form action="" class="container col s12">
+            <form action="<?php echo site_url('Admin/insert_banque');?>" class="container col s12">
                 <div class="input-field col s12">
                     <input id="nom" type="text" class="validate" name="nom">
                     <label for="nom">Banque</label>
@@ -18,7 +18,7 @@
                     <label for="compte">Numero de compte</label>
                 </div>
                 <div class="card-action">
-                    <button class="btn waves-effect" type="button" id="btn_add_banque">
+                    <button class="btn waves-effect" type="submit" id="btn_add_banque">
                         <i class="material-icons left" id="sd_ico_mdc">send</i>
                         <i class="material-icons left hide chargement" id="chgt_ico_mdc">loop</i>
                         Inserer
