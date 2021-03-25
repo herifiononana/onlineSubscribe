@@ -61,10 +61,8 @@
                     </button>
                 </div>
             </form>
-
-            <input type="hidden" id="url_mobile" value="<?php echo site_url('Admin/insert_mobile');?>">
-
         </div>
+        <input type="hidden" id="url_mobile" value="<?php echo site_url('Admin/insert_mobile');?>">
     </div>
 
     <?php

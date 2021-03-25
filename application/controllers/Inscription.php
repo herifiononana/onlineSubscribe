@@ -22,7 +22,6 @@
         public function inscriptionInsert() {
             if($_POST) {
                 extract($_POST);
-                var_dump($_POST);
                 $nom = isset($nom_candidat) ? $nom_candidat : null;
                 $prenom = isset($nom_candidat) ? $nom_candidat : null;
                 $genre = isset($genre) ? $genre : null;
@@ -58,7 +57,7 @@
 
                 );
                 $this->inscription_Model->save($data);
-                $this->loadPageComplet('Inscription/test');
+                $this->loadPageComplet('Inscription/inscription');
             }
         }
 

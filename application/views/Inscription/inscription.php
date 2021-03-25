@@ -106,10 +106,10 @@
         <div class="row">
             <div class="card">
                 <div class="card-content">
-                <div class="card-title">
-                    <h5><u>Les fichiers à joindre: </u></h5>
-                </div>
-                <div>
+                    <div class="card-title">
+                        <h5><u>Les fichiers à joindre: </u></h5>
+                    </div>
+                    <div>
                         <p>Diplôme :</p>
                         <input type="file" name="diplome" id="diplome" />
                     </div>
