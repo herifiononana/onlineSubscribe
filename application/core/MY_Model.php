@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-    require_once 'application/core/HF_Model_Interface.php';
+    require_once 'application/core/MY_Model_Interface.php';
 
     abstract class MY_Model extends CI_Model implements MY_Model_Interface{
 
