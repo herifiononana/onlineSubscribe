@@ -31,6 +31,14 @@
     <?php
             }
         }
+
+        if(isset($js)) {
+                foreach ($js as $JS) {
+    ?>
+                    <script src="<?php echo base_url('assets/js/'.$JS);?>"></script>
+    <?php
+                }
+        }
     ?>
 
     <title>ISPM Subscribe</title>   
