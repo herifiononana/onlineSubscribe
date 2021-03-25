@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends MY_Controller {
 
     protected $_data = array();
-    protected $_js = array("admin");
-    private $_model = array("banque_Model", "mobile_Model");
+    protected $_js = array("admin.js");
+    protected $_model = array("banque_Model", "mobile_Model");
 
     public function __construct()
     {
@@ -18,7 +18,7 @@ class Admin extends MY_Controller {
 
 	public function index()
 	{
-        $this->load->view('admin/banque', $this->_data);
+        $this->loadPageComplet('admin/paiement');
     }
 
     public function insert_banque()
@@ -52,5 +52,4 @@ class Admin extends MY_Controller {
             $this->mobile_Model->save($data);
         }
     }
-
 }
