@@ -4,7 +4,7 @@
         </div>
 
         <div class="row container">
-            <form action="<?php echo site_url('Admin/insert_banque');?>" class="container col s12">
+            <form action="" class="container col s12">
                 <div class="input-field col s12">
                     <input id="nom" type="text" class="validate" name="nom">
                     <label for="nom">Banque</label>
@@ -28,7 +28,6 @@
         </div>
 
         <input type="hidden" id="url_banque" value="<?php echo site_url('Admin/insert_banque');?>">
-        <?php echo site_url('Admin/insert_banque');?>
 
     </div>
 
