@@ -15,7 +15,24 @@
             $this->_data['css'] = $this->_css;
         }
 
-        public function loadView($view){
-            $this->load->view($view, $this->_data);
+        public function loadPage($view){
+            $this->load->view($view);
+        }
+
+        public function loadHeader()
+        {
+            $this->load->view("_template/header", $this->_data);
+        }
+
+        public function loadFooter()
+        {
+            $this->load->view("_template/footer", $this->_data);
+        }
+
+        public function loadPageComplet($view)
+        {
+            $this->loadHeader();
+            $this->load->view($view,$this->_data);
+            $this->loadFooter();
         }
     }
