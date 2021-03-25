@@ -5,11 +5,7 @@ class Admin extends MY_Controller {
 
     protected $_data = array();
     protected $_js = array("admin.js");
-<<<<<<< HEAD
-    private $_model = array("banque_Model", "mobile_Model");
-=======
     protected $_model = array("banque_Model", "mobile_Model");
->>>>>>> e433889d6becf0868fe3a39f5e39867d6e81bb53
 
     public function __construct()
     {

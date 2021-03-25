@@ -7,7 +7,6 @@ $(document).ready(function(){
             RIB = $('#RIB').val(),
             numero = $('#compte').val(),
             url = $('#url_banque').val();
-            console.log("salut"+banque+" "+RIB+" "+numero);
 
         $.post(
             url,

@@ -18,7 +18,7 @@
                     <label for="compte">Numero de compte</label>
                 </div>
                 <div class="card-action">
-                    <button class="btn waves-effect" type="button" id="btn_add_banque">
+                    <button class="btn waves-effect" type="submit" id="btn_add_banque">
                         <i class="material-icons left" id="sd_ico_mdc">send</i>
                         <i class="material-icons left hide chargement" id="chgt_ico_mdc">loop</i>
                         Inserer
@@ -28,7 +28,6 @@
         </div>
 
         <input type="hidden" id="url_banque" value="<?php echo site_url('Admin/insert_banque');?>">
-        <?php echo site_url('Admin/insert_banque');?>
 
     </div>
 
