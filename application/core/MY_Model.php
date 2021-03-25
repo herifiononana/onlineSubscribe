@@ -4,6 +4,14 @@
 
     abstract class MY_Model extends CI_Model implements MY_Model_Interface{
 
+        public function get_db_table(){
+            return $this->_table;
+        }
+    
+        public function get_db_table_pk(){
+            return $this->_pk;
+        }    
+
         public function __construct(){
             parent::__construct();
             $this->load->database();
