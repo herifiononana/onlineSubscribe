@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 l6">
-                    Merci de vous inscrire à l'ispm
+                    <p>Merci de vous inscrire à l'ispm</p>
+                    <p>Vous allez recevoir votre convocation</p>
                 </div>
                 
                 <div class="col s12 l6">
-                    Vous allez recevoir votre convocation
                 </div>
             </div>
         </div>
