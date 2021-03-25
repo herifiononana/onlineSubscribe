@@ -74,6 +74,7 @@
         </div>
 
         <input type="hidden" id="url_banque" value="<?php echo site_url('Admin/insert_banque');?>">
+        <?php echo site_url('Admin/insert_banque');?>
 
     </div>
 

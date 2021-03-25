@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends MY_Controller {
 
     protected $_data = array();
-    protected $_js = array("admin");
+    protected $_js = array("admin.js");
     private $_model = array("banque_Model", "mobile_Model");
 
     public function __construct()
@@ -24,6 +24,7 @@ class Admin extends MY_Controller {
     public function insert_banque()
     {
         if($_POST){
+            var_dump($_POST);
             extract($_POST);
             $banque = isset($nom) ? $nom : null;
             $RIB = isset($RIB) ? $RIB : null;

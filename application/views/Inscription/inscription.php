@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<form action="" method="post">
+<form action="<?php echo site_url('Inscription/inscriptionInsert')?>" method="post">
     <div class="container">
         <div class="card">
             <div class="row">
@@ -64,6 +64,10 @@
                             <input type="text" name="nationalite_candidat" id="nationalite_candidat">
                             <label for="nationalite_candidat">Nationalité : </label>
                         </div>
+                        <div class="input-field">
+                            <input type="text" name="loisir_candidat" id="loisir_candidat">
+                            <label for="loisir_candidat">Loisir et centre d'interêt : </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,6 +88,7 @@
                     <div>
                         <p>Série au bacc : </p>
                         <select class="browser-default"  name="serie_bac" id="serie_bac">
+                            <option value=""></option>
                             <option value="A1">Serie A1</option>
                             <option value="A2">Serie A2</option>
                             <option value="C">Serie C</option>
@@ -110,17 +115,17 @@
                     </div>
                     <div>
                         <p>Carte d'identité :</p>
-                        <input type="file" name="diplome" id="diplome" />
+                        <input type="file" name="cin" id="diplome" />
                     </div>
                     <div>
                         <p>Photo d'indentité :</p>
-                        <input type="file" name="diplome" id="diplome" />
+                        <input type="file" name="photo" id="diplome" />
                     </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <button class="btn waves-effect waves-light" id="btnValiderInscription">
+        <button type="submit" class="btn waves-effect waves-light" id="btnValiderInscription">
             <i class="material-icons left" id="sendInscriptionIcon">send</i>
             <i class="material-icons left chargement hide" id="chgtInscriptionIcon">loop</i>
             Valider
