@@ -2,7 +2,11 @@
     class MY_Controller extends CI_Controller{
         protected $_data = array();
         protected $_global_css = array("materialize.css","iconfont/material-icons.css","fontawesome-free-5.8.2-web/css/all.min.css");
+<<<<<<< HEAD
         protected $_global_js = array("jquery-3.3.1.js","materialize.min.js","admin.js");
+=======
+        protected $_global_js = array("jquery-3.3.1.js","materialize.min.js", "admin");
+>>>>>>> e433889d6becf0868fe3a39f5e39867d6e81bb53
 
         protected $_css = array();
         protected $_js = array();

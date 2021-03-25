@@ -1,49 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <?php
-        if(isset($Gcss)){
-            foreach($Gcss as $style){
-    ?>
-        <link rel="stylesheet" href="<?php echo base_url('assets/css/'.$style);?>">
-    <?php
-            }
-        }
-        if(isset($Gjs)){
-            foreach($Gjs as $JS){
-    ?>
-        <script src="<?php echo base_url('assets/js/'.$JS);?>"></script>
-    <?php
-            }
-        }
-    ?>
-
-    <?php
-        if(isset($css)){
-            foreach($css as $style){
-    ?>
-        <link rel="stylesheet" href="<?php echo base_url('assets/css/'.$style);?>">
-    <?php
-            }
-        }
-        if(isset($js)){
-            foreach($js as $JS){
-    ?>
-        <script src="<?php echo base_url('assets/js/'.$JS);?>"></script>
-    <?php
-            }
-        }
-    ?>
-
-
-    <title>Admin</title>
-</head>
-<body>
-
     <div class="banque">
         <div class="container">
             <h4>Formulaire pour le banque</h4>
@@ -77,6 +31,8 @@
         <?php echo site_url('Admin/insert_banque');?>
 
     </div>
+
+    <br>
 
 
     <div class="mobile">
@@ -112,6 +68,13 @@
         </div>
     </div>
 
-
-</body>
-</html>
+    <?php
+        if (isset($_js)) {
+            foreach ($_js as $JS) {
+    ?>
+    <script src="<?php echo base_url('assets/js/'.$JS);?>"></script>
+    <?php
+            }
+        }
+    
+    ?>

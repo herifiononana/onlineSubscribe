@@ -5,7 +5,11 @@ class Admin extends MY_Controller {
 
     protected $_data = array();
     protected $_js = array("admin.js");
+<<<<<<< HEAD
     private $_model = array("banque_Model", "mobile_Model");
+=======
+    protected $_model = array("banque_Model", "mobile_Model");
+>>>>>>> e433889d6becf0868fe3a39f5e39867d6e81bb53
 
     public function __construct()
     {
@@ -18,7 +22,7 @@ class Admin extends MY_Controller {
 
 	public function index()
 	{
-        $this->load->view('admin/banque', $this->_data);
+        $this->loadPageComplet('admin/paiement');
     }
 
     public function insert_banque()
@@ -53,5 +57,4 @@ class Admin extends MY_Controller {
             $this->mobile_Model->save($data);
         }
     }
-
 }
