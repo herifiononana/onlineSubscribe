@@ -89,11 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-<<<<<<< HEAD
-$autoload['helper'] = array("form", "url");
-=======
 $autoload['helper'] = array('url');
->>>>>>> refs/remotes/origin/master
 
 /*
 | -------------------------------------------------------------------
