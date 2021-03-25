@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
     class MY_Controller extends CI_Controller{
         protected $_data = array();
-        protected $_global_css = array();
-        protected $_global_js = array();
+        protected $_global_css = array("materialize.css", "iconfont/material-icons.css", "fontawesome-free-5.8.2-web/css/all.min.css");
+        protected $_global_js = array("jquery-3.3.1.js", "materialize.min.js", "menu.js");
         protected $_all_model = array();
 
         protected $_css = array();
@@ -17,7 +17,24 @@
             // $this->_data['model'] = $this->_all_model;
         }
 
-        public function loadView($view){
+        public function loadPage($view){
             $this->load->view($view);
+        }
+
+        public function loadHeader()
+        {
+            $this->load->view("_template/header", $this->_data);
+        }
+
+        public function loadFooter()
+        {
+            $this->load->view("_template/footer", $this->_data);
+        }
+
+        public function loadPageComplet($view)
+        {
+            $this->loadHeader();
+            $this->load->view($view,$this->_data);
+            $this->loadFooter();
         }
     }
